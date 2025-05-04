@@ -1,0 +1,87 @@
+
+//Objetos
+const user = {
+    name:"Cristian",
+    lastName:"Tambaco",
+    age:20,
+    address:{
+        city:"Quito",
+        telephone:"0961402549",
+        streets:{
+            principal:"Av. Amazonas",
+            secondary:"Oe5A"
+        }
+    }
+
+}
+const {name,lastName,age,address:{streets}} = user
+console.log(name,lastName,age,streets)
+
+
+//Arreglos 
+const users=[
+    {
+        name:"Cristian",
+        lastName:"Tambaco",
+        age:24
+    },
+    {
+        name:"Adrian",
+        lastName:"Rodríguez",
+        age:18
+    },
+    {
+        name:"Josue",
+        lastName:"Guerra",
+        age:20
+    },
+    {
+        name:"Rebecca",
+        lastName:"Estefania",
+        age:21
+    },
+    {
+        name:"Evelin",
+        lastName:"Campoverde",
+        age:19
+    },
+    {
+        name:"Carla",
+        lastName:"Villegas",
+        age:40
+    },
+    {
+        name:"Vale",
+        lastName:"ㅤ",
+        age:20
+    },
+    {
+        name:"Melu",
+        lastName:"ㅤ",
+        age:22
+    },
+    {
+        name:"Andrés",
+        lastName:"Aguilar",
+        age:18
+    },
+    {
+        name:"Laura",
+        lastName:"Campos",
+        age:25
+    },
+    {
+        name:"Fernando",
+        lastName:"Sánchez",
+        age:21
+    },
+]
+const usersBDD = users.map((u)=>{
+    return{
+        name:u.name.toUpperCase(),
+        lastName:u.lastName.toUpperCase()
+    }
+ })
+ console.log("Personas que quizá conozcas");
+ console.log(usersBDD);
+ 
